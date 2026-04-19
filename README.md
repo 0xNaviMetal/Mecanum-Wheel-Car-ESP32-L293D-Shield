@@ -86,11 +86,10 @@ Here is how the project files are organized so you can easily find what you need
 Mecanum-Wheel-Car-ESP32-L293D-Shield/
 │
 ├── 💻 Firmware/               # ESP32 Source Code
-│   └── Mecanum_ESP32.ino      # Main Arduino/C++ code
+│   └── mian.cpp     # Main Arduino/C++ code
 │
-├── 🔌 Hardware/               # Electronics and Design Files
-│   ├── components/            # Datasheets and part lists
-│   └── schematics/            # Wiring diagrams and pinouts
+├── 🔌 Hardware/                # Electronics and Design Files
+│   ├── components/schematics   # Datasheets and part lists
 │
 ├── 🖼️ Assets/                 # Images and media for documentation
 │   └── (build photos, etc.)
