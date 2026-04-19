@@ -2,7 +2,7 @@
 
 **A Bluetooth-controlled Mecanum wheel car built by reverse-engineering an Arduino Uno L293D Motor Shield to work with an ESP32.**
 
-![Mecanum Car Build](image.png)
+<img src="assets/YOUR_FILENAME_HERE.jpg" width="400" alt="Short description">
 *(The car features a repurposed Power Supply Unit (PSU) shell used as the main chassis, housing the ESP32, L293D shield, and wiring).*
 
 ---
@@ -76,3 +76,23 @@ Here is how the logic works based on my code implementation:
 | **W/X/Y/Z** | Diagonal Movements | Running only two diagonal motors at a time |
 | **M / K** | Rotate in place | Left wheels CW, Right wheels CCW (and vice versa) |
 | **S** | Stop | Send `0b00000000` to stop all power |
+
+
+## 📂 Repository Structure
+
+Here is how the project files are organized so you can easily find what you need:
+
+```text
+Mecanum-Wheel-Car-ESP32-L293D-Shield/
+│
+├── 💻 Firmware/               # ESP32 Source Code
+│   └── Mecanum_ESP32.ino      # Main Arduino/C++ code
+│
+├── 🔌 Hardware/               # Electronics and Design Files
+│   ├── components/            # Datasheets and part lists
+│   └── schematics/            # Wiring diagrams and pinouts
+│
+├── 🖼️ Assets/                 # Images and media for documentation
+│   └── (build photos, etc.)
+│
+└── 📄 README.md               # This documentation file
