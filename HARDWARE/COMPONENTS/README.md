@@ -15,7 +15,23 @@ To build this project, you will need the following components:
 
 ## ⚡ Wiring & Power Connections
 
-*(You can add an image of your schematic here like this: `![Schematic](schematics/diagram.png)`)*
+       [ ESP32 ]                            [ L293D Motor Shield ]
+      -----------                          ------------------------
+      GPIO 21   |------(Serial Data)-----> | DIR_SER   (74HC595)  |
+      GPIO 19   |--------(Clock)---------> | DIR_CLK   (74HC595)  |
+      GPIO 23   |--------(Latch)---------> | DIR_LATCH (74HC595)  |
+      GPIO 18   |----(Output Enable)-----> | DIR_EN    (74HC595)  |
+      GND       |----------(GND)---------+ | GND                  |
+      -----------                        | |                      |
+                                         | | EXT_PWR+ <---- [ PSU + ]
+                                         +-| EXT_GND  <---- [ PSU - ]
+                                           |                      |
+                                           | M1 OUT ----> Motor 1 |
+                                           | M2 OUT ----> Motor 2 |
+                                           | M3 OUT ----> Motor 3 |
+                                           | M4 OUT ----> Motor 4 |
+                                           ------------------------
+
 
 ### ESP32 to 74HC595 (L293D Shield)
 | Shield Pin (74HC595) | ESP32 GPIO | Function |
