@@ -9,7 +9,6 @@ To build this project, you will need the following components:
 * **L293D Motor Drive Shield** (Standard Arduino Uno form factor)
 * **4x DC Gear Motors** (with appropriate voltage rating for your power supply)
 * **4x Mecanum Wheels** (Important: Make sure to have 2 'Left' and 2 'Right' wheels for proper kinematics)
-* **Power Supply Unit (PSU)** (Repurposed as the main chassis and power distribution hub)
 * **Jumper wires & basic soldering equipment**
 
 ---
@@ -33,7 +32,7 @@ To build this project, you will need the following components:
 1. **Wiring:** Connect the ESP32 to the L293D shield according to the pin table above using jumper wires.
 2. **Power Distribution (CRITICAL):** 
    * Ensure the ESP32 is powered safely via 3.3V/5V.
-   * The L293D shield **must** receive external motor power directly from the PSU. 
+   * The L293D shield **must** receive external motor power.
    * **Do not** power the 4 DC motors directly from the ESP32 pins, or you will burn the board!
 3. **Upload Firmware:** Open the code in the `Firmware/` folder using the Arduino IDE, select your ESP32 board, and flash the code.
 4. **Bluetooth Setup:** 
