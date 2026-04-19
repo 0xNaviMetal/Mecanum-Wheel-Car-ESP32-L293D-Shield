@@ -2,7 +2,7 @@
 
 **A Bluetooth-controlled Mecanum wheel car built by reverse-engineering an Arduino Uno L293D Motor Shield to work with an ESP32.**
 
-<img src="assets/YOUR_FILENAME_HERE.jpg" width="400" alt="Short description">
+<img src="ASSETS/11.jpg" width="400" alt="---">
 *(The car features a repurposed Power Supply Unit (PSU) shell used as the main chassis, housing the ESP32, L293D shield, and wiring).*
 
 ---
@@ -14,7 +14,7 @@ The shield drives 4 DC motors using two L293D chips, but the direction of these 
 
 ### ESP32 to 74HC595 Wiring Connections
 Based on the trace analysis, here is how the ESP32 connects to the shift register pins on the shield:
-
+<img src="ASSETS/33.jpg" width="400" alt="---">
 | Shield Pin (74HC595) | ESP32 GPIO | Function |
 | :--- | :--- | :--- |
 | `DIR_SER` | **GPIO 21** | **Serial Data Pin** - Sends the 1s and 0s |
