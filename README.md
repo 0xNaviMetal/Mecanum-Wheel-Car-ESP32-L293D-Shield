@@ -22,6 +22,9 @@ Based on the trace analysis, here is how the ESP32 connects to the shift registe
 | `DIR_LATCH` | **GPIO 23** | **Latch Pin** - Updates the output pins |
 | `DIR_EN` | **GPIO 18** | **Output Enable** - Active LOW to enable motors |
 
+<img src="ASSETS/44.jpg" width="400" alt="---">
+
+
 ### The 8-Bit Motor Configuration Map
 After multiple uploads and hardware testing, I successfully mapped which bit in the shift register controls which motor direction.
 
